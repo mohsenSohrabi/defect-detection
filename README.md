@@ -4,7 +4,7 @@ This project is focused on the exploration and application of various models, in
 
 ## Dataset
 
-The original dataset can be accessed [here](https://drive.google.com/file/d/1x6hoF7G-tSYxg8AFybggypLZgMGDNHfF/view). We have downloaded and preprocessed it using a `preprocess.py` script, which can be found in the dataset folder. **Note that** I got this 'preprocess.py' from [here](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/Defect-detection/dataset). The preprocessed dataset includes `train.jsonl`, `valid.jsonl`, and `test.jsonl` files. For ease of use, we have trimmed these files and extracted two essential columns: `func` and `target`. The `func` column contains the code, and `target` is our label, which is either 0 or 1. After trimming, we saved them as 'train_processed.jsonl', 'valid_processed.jsonl', and 'test_processed.jsonl' for further use.
+The original dataset can be accessed [here](https://drive.google.com/file/d/1x6hoF7G-tSYxg8AFybggypLZgMGDNHfF/view). We have downloaded and preprocessed it using a `preprocess.py` script, which can be found in the dataset folder. **Note that** I got  **'preprocess.py'** from [here](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/Defect-detection/dataset). The preprocessed dataset includes `train.jsonl`, `valid.jsonl`, and `test.jsonl` files. For ease of use, we have trimmed these files and extracted two essential columns: `func` and `target`. The `func` column contains the code, and `target` is our label, which is either 0 or 1. After trimming, we saved them as 'train_processed.jsonl', 'valid_processed.jsonl', and 'test_processed.jsonl' for further use.
 
 ## Models
 
