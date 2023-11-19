@@ -1,26 +1,24 @@
 # Defect Detection in Source Code (CodeXGLUE Dataset Code-Code)
 
-In this project, we investigate and run models including CNN, LSTM, and Transformers on the Code-Code dataset of the CodeXGLUE benchmark. The dataset is designed for defect detection in source code and contains examples of code with and without defects. We preprocess the data and create a model to detect defects in the source code.
+This project involves the investigation and implementation of models, including CNN, LSTM, and Transformers, on the Code-Code dataset of the CodeXGLUE benchmark. The dataset is specifically designed for defect detection in source code and comprises examples of code with and without defects. We preprocess the data and develop a model to detect defects in the source code.
 
 ## Dataset
 
-The original dataset can be downloaded from [here]. We have downloaded and preprocessed it by running a `preprocess.py` existing in the dataset folder. The preprocessed dataset includes `train.jsonl`, `valid.jsonl`, and `test.jsonl` files. For convenience, we trim the files and extract two necessary columns from it: `func` and `target`. Here, `func` includes the code and `target` is our label which is either 0 or 1.
+The original dataset can be downloaded from [here](https://drive.google.com/file/d/1x6hoF7G-tSYxg8AFybggypLZgMGDNHfF/view). We have downloaded and preprocessed it using a `preprocess.py` script located in the dataset folder. The preprocessed dataset includes `train.jsonl`, `valid.jsonl`, and `test.jsonl` files. For convenience, we have trimmed the files and extracted two necessary columns: `func` and `target`. The `func` column includes the code, and `target` is our label, which is either 0 or 1.
 
 ## Models
 
-We include three models: CNN, LSTM, and Transformers which can be found in the `models` folder. 
+This project includes three models: CNN, LSTM, and Transformers. These models can be found in the `models` folder. 
 
 ## Running the Models
 
-To run each of the models, you can use one of the below commands:
+Each command corresponds to running a specific model:
 
-```bash
-py run.py --model cnn
-py run.py --model lstm 
-py run.py --model transformers
-```
+- `py run.py --model cnn` : This command is used to run the CNN model.
+- `py run.py --model lstm` : This command is used to run the LSTM model.
+- `py run.py --model transformers` : This command is used to run the Transformers model.
 
-Note: In Linux or Mac, one should use `python` instead of `py`.
+Please note that on Linux or Mac, you should use `python` instead of `py`.
 
 ## Contributing
 
