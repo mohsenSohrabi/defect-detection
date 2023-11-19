@@ -1,3 +1,4 @@
-
+Run one of the below commands to run training:
+py run.py --model cnn
 py run.py --model lstm
 py run.py --model transformers
